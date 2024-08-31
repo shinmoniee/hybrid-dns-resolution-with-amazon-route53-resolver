@@ -19,8 +19,8 @@ Key requirements:
 ![Hybrid DNS Architecture](images/hybriddns.png)
 
 The setup consists of two VPCs:
-1. Cloud VPC (10.0.0.0/16)
-2. On-premises VPC (172.16.0.0/16)
+- Cloud VPC (10.0.0.0/16)
+- On-premises VPC (172.16.0.0/16)
 
 Key components:
 - On-premises DNS server (BIND) running on an EC2 instance
