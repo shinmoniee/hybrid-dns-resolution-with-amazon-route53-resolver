@@ -1,0 +1,27 @@
+# .gitignore
+
+# Terraform files
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+
+# Exclude all .tfvars files, which are likely to contain sensitive data
+*.tfvars
+*.tfvars.json
+
+# Ignore .terraform.lock.hcl file which should be kept locally
+.terraform.lock.hcl
+
+# Ignore any SSH keys
+*.pem
+*.pub
+
+# Ignore any log files
+*.log
+
+# Ignore any .env files which might contain environment variables
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db

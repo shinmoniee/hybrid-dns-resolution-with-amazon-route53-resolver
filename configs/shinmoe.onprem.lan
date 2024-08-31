@@ -1,0 +1,12 @@
+$TTL 86400
+@   IN  SOA     dns.shinmoe.onprem. root.shinmoe.onprem. (
+    2024083001  ;Serial
+    3600        ;Refresh
+    1800        ;Retry
+    604800      ;Expire
+    86400       ;Minimum TTL
+)
+    IN  NS      dns.shinmoe.onprem.
+    IN  A       172.16.2.10
+dns IN  A       172.16.2.10
+app IN  A       172.16.1.10

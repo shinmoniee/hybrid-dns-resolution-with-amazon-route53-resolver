@@ -1,0 +1,5 @@
+zone "shinmoe.onprem" IN {
+    type master;
+    file "/etc/bind/shinmoe.onprem.lan";
+    allow-update { none; };
+};
