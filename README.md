@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This handson demonstrates a hybrid DNS architecture using AWS Route 53 Resolver, connecting an on-premises environment (simulated in AWS) with a cloud VPC. It showcases how to enable seamless DNS resolution between on-premises and cloud environments.
+This handson demonstrates a hybrid DNS architecture using Amazon Route 53 Resolver, connecting an on-premises environment (simulated in AWS) with a cloud VPC. It showcases how to enable seamless DNS resolution between on-premises and cloud environments.
 
 ## Scenario
 
