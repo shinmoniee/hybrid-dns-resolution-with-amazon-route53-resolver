@@ -22,7 +22,7 @@ The setup consists of two VPCs:
 - Cloud VPC (10.0.0.0/16)
 - On-premises VPC (172.16.0.0/16)
 
-Key components:
+and other key components:
 - On-premises DNS server (BIND) running on an EC2 instance
 - Route 53 private hosted zone for the cloud environment
 - Route 53 Resolver endpoints (inbound-endpoint and outbound-endpoint)
@@ -31,10 +31,10 @@ Key components:
 
 ## Post-Deployment Steps
 
-After successfully applying the Terraform configuration, follow these steps to complete the setup:
+After successfully applying the Terraform configuration, follow these steps to complete the setup.
 
 **Reboot On-premises VPC Instances**
-The custom DHCP options set for the on-premises VPC requires a reboot of the EC2 instances to take effect. This step is crucial for proper DNS resolution within the on-premises environment.
+: The custom DHCP options set for the on-premises VPC requires a reboot of the EC2 instances to take effect. This step is crucial for proper DNS resolution within the on-premises environment.
 
 a. Connect to the AWS Management Console
 
@@ -96,6 +96,7 @@ Follow these steps to verify that your hybrid DNS setup is functioning correctly
    d. Review the "Metrics" tab for each endpoint to confirm query processing
 
 5. **Test External DNS Resolution**
+   
    From both Cloud and On-premises App servers, resolve a public domain:
    ```bash
    nslookup www.example.com

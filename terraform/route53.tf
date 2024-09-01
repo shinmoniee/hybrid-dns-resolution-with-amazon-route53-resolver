@@ -54,9 +54,6 @@ resource "aws_route53_resolver_rule" "onprem" {
   target_ip {
     ip = aws_instance.onprem_dns.private_ip
   }
-  target_ip {
-    ip = aws_instance.onprem_app.private_ip
-  }
 }
 
 resource "aws_route53_resolver_rule_association" "onprem" {
